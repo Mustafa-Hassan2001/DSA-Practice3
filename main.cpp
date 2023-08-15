@@ -907,20 +907,166 @@ cin>>n;
 //	cout<<endl;
 //}
 
+//8
+//for(int i=1; i<=n; i++){
+//	for(int j=1; j<=n-i+1; j++){
+//		cout<<j;
+//	}
+//	cout<<endl;
+//}
+//int i=1; 
+//while(i<=n){
+//	int j=1;
+//	while(j<=n-i+1){
+//		cout<<j;
+//		j++;
+//	}
+//	cout<<endl;
+//	i++;
+//}
+
+//9
+//int i=1; 
+//while(i<=n){
+//	int j=1;
+//	while(j<=i){
+//		if((i+j)%2==0){
+//		cout<<"1";
+//		}
+//		else{
+//			cout<<"0";
+//		}
+//		j++;
+//	}
+//	cout<<endl;
+//	i++;
+//}
 
 
+//10
+//int i=1; 
+//while(i<=n){
+//	int j=1, sp=n-i;
+//	while(j<=sp){
+//		cout<<" ";
+//		j++;
+//	}
+//	j=1;
+//	while(j<=n){
+//		cout<<"*";
+//		j++;
+//	}
+//	cout<<endl;
+//	i++;
+//}
+
+//11
+//int i=1; 
+//while(i<=n){
+//	int j=1, sp=n-i, val=1;
+//	while(j<=sp){
+//		cout<<" ";
+//		j++;
+//	}
+//	j=1;
+//	while(j<=i){
+//		cout<<val<;
+//		val++;
+//		j++;
+//	}
+//	cout<<endl;
+//	i++;
+//}
+
+//12
+//int i=1; 
+//while(i<=n){
+//	int j=1, sp=n-i, val=i;
+//	while(j<=sp){
+//		cout<<" ";
+//		j++;
+//	}
+//	j=1;
+//	while(j<=i){
+//		cout<<val;
+//		val--;
+//		j++;
+//	}
+//	j=2;
+//	while(j<=i){
+//		cout<<j;
+//		j++;
+//	}
+//	cout<<endl;
+//	i++;
+//}
+
+//13
+//int i=1; 
+//while(i<=n){
+//	int j=1, sp=n-i;
+//	while(j<=sp){
+//		cout<<" ";
+//		j++;
+//	}
+//	while(j<=2*i-1){
+//		cout<<"*";
+//		j++;
+//	}
+//	cout<<endl;
+//	i++;
+//}
+//i=1;
+//while(n>=i){
+//	int j=1, sp=n-i;
+//	while(j<=sp){
+//		cout<<" ";
+//		j++;
+//	}
+//	while(j<=2*i-1){
+//		cout<<"*";
+//		j++;
+//	}
+//	cout<<endl;
+//	i--;
+//}
 
 
+//for(int i=1; i<=n; i++){
+//	for(int j=1; j<=n-i;j++){
+//		cout<<" ";
+//	}
+//	for(int k=1; k<=2*i-1; k++){
+//		cout<<"*";
+//	}
+//	cout<<"\n";
+//}
+//for(int i=n; i>=1; i--){
+//	for(int j=1; j<=n-i;j++){
+//		cout<<" ";
+//	}
+//	for(int k=1; k<=2*i-1; k++){
+//		cout<<"*";
+//	}
+//	cout<<"\n";
+//}
 
 
-
-
-
-
-
-
-
-
+int i=1;
+while(i<=3){
+	int j=1;
+	while(j<=n){
+		if((i+j)%4==0 || (i==2 && j%4==0)){
+			cout<<"*";
+		}
+		else{
+			cout<<" ";
+		}
+		j++;
+	}
+	cout<<endl;
+	i++;
+}
 
 	return 0;
 }
